@@ -12,6 +12,6 @@
 ## Task suggestions
 
 - Change task-1.js so that you train the neural net to prefer red and green colors
-- Extend the network in task-1.js to handle 3 colors, where the last one is blue 
+- Extend the network in task-1.js to handle 3 colors, and prefer the last one to be blue 
 - 
 - Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
