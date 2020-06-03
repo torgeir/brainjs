@@ -1,6 +1,6 @@
 # brainjs-colors
 
-## intro
+## Intro
 
 - neural networks in the browser [brain.js](https://github.com/BrainJS/brain.js)
 - on the gpu [gpu.js](https://github.com/gpujs/gpu.js)
