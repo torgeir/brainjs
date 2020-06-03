@@ -15,3 +15,14 @@
 - Extend the network in task-1.js to handle 3 colors, and prefer the last one to be blue 
 - 
 - Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
+
+## Play music
+
+You can play notes using [Tone.js](https://tonejs.github.io/), e.g. like
+
+```js
+document.addEventListener("click", () => {
+  var synth = new Tone.FMSynth().toMaster()
+  synth.triggerAttackRelease('C1', 0.5, 0)
+})
+```
