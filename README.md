@@ -12,8 +12,8 @@
 ## Task suggestions
 
 - Change task-1.js so that you train the neural net to prefer red and green colors
-- Extend the network in task-1.js to handle 3 colors, and prefer the last one to be blue 
-- 
+- Extend the network in task-1.js to handle 3 colors, and prefer the last one to be blue
+-
 - Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
 
 ## Play music
@@ -21,8 +21,12 @@
 You can play notes using [Tone.js](https://tonejs.github.io/), e.g. like
 
 ```js
-document.addEventListener("click", () => {
-  var synth = new Tone.FMSynth().toMaster()
-  synth.triggerAttackRelease('C1', 0.5, 0)
-})
+document.addEventListener('click', () => {
+  var synth = new Tone.PolySynth().toMaster();
+  synth.triggerAttackRelease(['C3', 'E3', 'G3'], 0.5, 0);
+  synth.triggerAttackRelease(['E3'], 0.5, 0.5);
+  synth.triggerAttackRelease(['G3'], 0.5, 1);
+  synth.triggerAttackRelease(['E3'], 0.5, 1.5);
+  synth.triggerAttackRelease(['F3'], 0.5, 2);
+});
 ```
