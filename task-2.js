@@ -3,10 +3,10 @@ console.log("task-2.js");
 (async () => {
   const midi = await Midi.fromUrl("til-elise.mid");
 
-  const name = midi.name;
-
   /*
     Example midi use
+
+    const name = midi.name;
 
     //get the tracks
     midi.tracks.forEach((track) => {
