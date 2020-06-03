@@ -1,3 +1,5 @@
+console.log("task-2.js");
+
 (async () => {
   const midi = await Midi.fromUrl("til-elise.mid");
 

@@ -1,3 +1,5 @@
+console.log("task-1.js");
+
 const div = (m) => (n) => n / m;
 const times = (n) => (m) => n * m;
 const rand = (n) => n * Math.random();
