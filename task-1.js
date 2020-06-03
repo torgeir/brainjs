@@ -17,12 +17,11 @@ function Sketch() {
           p.createCanvas(200, 20 * squareSize);
           resolve(self);
         };
-        self.drawColors = function (y, colors) {
+        self.drawColors = (y, colors) =>
           colors.forEach((color, i) => {
             p.fill(...color.map(times(255)));
             p.rect(squareSize * i, y, squareSize, squareSize);
           });
-        };
       })
   );
 }

@@ -1,5 +1,5 @@
 // https://github.com/BrainJS/brain.js#standalone-function
-
+// console.log(net.toFunction().toString());
 function anonymous(input) {
   return [
     1 /
