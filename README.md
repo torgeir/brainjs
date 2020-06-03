@@ -11,10 +11,10 @@
 
 ## Task suggestions
 
-- Change task-1.js so that you train the neural net to prefer red and green colors
-- Extend the network in task-1.js to handle 3 colors, and prefer the last one to be blue 
-- 
-- Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
+- Task-1.js: Change the neural net to prefer red and green colors
+- Task-1.js: Extend the network to handle 3 colors, remember to add the third preferred color to score()
+- Task-2.js: Write a lstm neural network to forecast sequences of notes, based on midi input
+- Task-3.js: Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
 
 ## Play music
 
