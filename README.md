@@ -1,4 +1,4 @@
-# brainjs-colors
+# brainjs
 
 ## Intro
 
