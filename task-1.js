@@ -29,10 +29,6 @@ function Sketch() {
 }
 
 (async () => {
-  // oppgaver:
-  // - bytt så rød og grønn er preferred farger, tren
-  // - utvid med én ekstra farge du liker
-
   const sketch = await new Sketch();
 
   const colors = () => [rgb(), rgb()];
