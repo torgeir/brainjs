@@ -16,7 +16,9 @@
 - **Task-2.js**: Write a lstm neural network to forecast sequences of notes, based on midi input
 - **Task-3.js**: Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
 
-## Pretty color palettes available
+## Tips
+
+### Pretty color palettes available
 
 ```js
 palettes.slice(0, 2)
@@ -30,7 +32,7 @@ palettes.slice(0, 2)
   [0,147,165]]]
 ```
 
-## Play midi in the browser
+### Play midi in the browser
 
 You can play notes using [Tone.js](https://tonejs.github.io/), e.g. like
 
