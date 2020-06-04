@@ -16,19 +16,26 @@
 - Task-2.js: Write a lstm neural network to forecast sequences of notes, based on midi input
 - Task-3.js: Given the set of palettes in colors.js, use brain.js to generate new, pretty palettes
 
-## Play music
+## Play midi in the browser
 
 You can play notes using [Tone.js](https://tonejs.github.io/), e.g. like
 
 ```js
-document.addEventListener('click', () => {
-  var synth = new Tone.PolySynth().toMaster();
-  synth.triggerAttackRelease(['C3', 'E3', 'G3'], 0.5, 0);
-  synth.triggerAttackRelease(['E3'], 0.5, 0.5);
-  synth.triggerAttackRelease(['G3'], 0.5, 1);
-  synth.triggerAttackRelease(['E3'], 0.5, 1.5);
-  synth.triggerAttackRelease(['F3'], 0.5, 2);
-});
+let synth = new Tone.Synth().toMaster();
+
+let toNote = midiValue => Tone.Frequency(midiValue, "midi").toNote()
+
+function play () {
+  const startOfFurElise = [76, 75, 76, 75, 76]; // next is 71
+  startOfFurElise
+    .map(toNote)
+    .forEach((note, i) => {
+      console.log(note);
+      synth.triggerAttackRelease(note, "8n", Tone.context.currentTime + i * 0.5);
+     });
+}
+
+document.addEventListener('click', play);
 ```
 
 ## Resources
