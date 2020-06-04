@@ -32,7 +32,7 @@ function play () {
     .forEach((note, i) => {
       console.log(note);
       synth.triggerAttackRelease(note, "8n", Tone.context.currentTime + i * 0.5);
-     });
+    });
 }
 
 document.addEventListener('click', play);
