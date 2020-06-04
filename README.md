@@ -30,3 +30,9 @@ document.addEventListener('click', () => {
   synth.triggerAttackRelease(['F3'], 0.5, 2);
 });
 ```
+
+## Resources
+
+- [Play music in the browser](https://tonejs.github.io/)
+- [Convert midi to json](https://tonejs.github.io/Midi/)
+- [Cracking captchas with neural networks](https://codepen.io/birjolaxew/post/cracking-captchas-with-neural-networks)
