@@ -56,6 +56,21 @@ document.addEventListener('click', play);
 
 ### p5.js is available
 
+```js
+new p5(function (p) {
+
+  p.setup = function () {
+    p.createCanvas(100, 100);
+    p.frameRate(1)
+  };
+
+  p.draw = function () {
+    p.fill(10, 10, Math.random() * 255)
+    p.rect(0, 0, 100, 100)
+  };
+});
+```
+
 ## Resources
 
 - [Play music in the browser](https://tonejs.github.io/)
