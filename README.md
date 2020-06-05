@@ -75,4 +75,5 @@ new p5(function (p) {
 
 - [Play music in the browser](https://tonejs.github.io/)
 - [Convert midi to json](https://tonejs.github.io/Midi/)
+- [Pretty color palettes](https://github.com/mattdesl/dictionary-of-colour-combinations)
 - [Cracking captchas with neural networks](https://codepen.io/birjolaxew/post/cracking-captchas-with-neural-networks)
