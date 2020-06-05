@@ -1,4 +1,4 @@
-# brainjs
+# brainjs workshop
 
 ## Intro
 
